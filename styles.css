@@ -13,7 +13,7 @@ html {
 } /*16px*/
 
 :root {
-  --primary-text-color: #272343;
+  --primary-text-color: #ffffff;
   --secondary-text-color: #2d334a;
   --durability-text-color: #6a737d9c;
   --icon-color: #e3f6f5;
@@ -25,7 +25,7 @@ html {
     rgba(224, 37, 206, 0.79) 83%
   );
   --second-background-color: rgba(196, 196, 196, 0.3);
-  --second-background-color-35: rgba(196, 196, 196, 0.35); 
+  --second-background-color-35: rgba(196, 196, 196, 0.35);
   --third-background-color: #fffffe;
 
   --letter-spacing: 1px;
@@ -42,6 +42,9 @@ body {
 
 p {
   margin: 0;
+  padding-bottom: 15px;
+  text-indent: 1.5em;
+  text-align: justify;
 }
 h1,
 h2,
@@ -50,7 +53,7 @@ h4,
 h5 {
   margin: 0;
   font-weight: 400;
-  line-height: 1,5;
+  line-height: 1, 5;
   letter-spacing: var(--letter-spacing);
 }
 
@@ -87,6 +90,7 @@ small,
 
 a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .img {
@@ -109,13 +113,13 @@ a {
   background-color: var(--second-background-color);
   padding: 10px auto;
   border-radius: var(--border-radius);
+  color: var(--primary-text-color);
   width: 100%;
 }
 .profile {
   display: flex;
   flex-direction: row;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding: 15px;
   align-items: flex-start;
 }
 
@@ -134,7 +138,7 @@ a {
 .name-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 22px;
+  margin-left: 15px;
 }
 h1 > span {
   font-weight: 200;
@@ -142,9 +146,72 @@ h1 > span {
   color: var(--secondary-text-color);
 }
 .wrapper {
-
+  display: flex;
+  flex-direction: row;
+  background-color: var(--second-background-color-35);
+  border-radius: var(--border-radius);
+  margin: 15px;
+  padding: 15px;
 }
 
+.center {
+  align-items: center;
+}
+
+.wrapper img {
+  padding-right: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.intro-container,
+.languages-container,
+.hobbies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.intro-container h2 {
+  text-align: left;
+  padding: 10px 0 25px;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.language img {
+  width: 100px;
+  padding-left: 20px;
+}
+
+.hobbies-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  margin: 15px;
+}
+
+.hobbies-container h3 {
+  background-color: var(--second-background-color-35);
+  border-radius: var(--border-radius);
+  padding: 15px;
+}
+.hobby-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+}
+.hobby img {
+  padding-bottom: 10px;
+}
 .main-container {
   display: flex;
   flex-direction: column;
