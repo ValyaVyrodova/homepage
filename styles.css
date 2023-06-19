@@ -83,7 +83,6 @@ h5 {
   max-width: 40em;
 }
 
-
 a {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -187,16 +186,6 @@ h1 > span {
   flex-direction: column;
 }
 
-.menu-social ul,
-.menu-social li {
-  list-style-type: none;
-}
-
-.menu-social > ul {
-  display: flex;
-  flex-direction: row;
-}
-
 .icons {
   width: 30px;
   height: 30px;
@@ -214,6 +203,10 @@ h1 > span {
 .language img {
   width: 100px;
   padding-left: 20px;
+}
+
+section h3 {
+  font-weight: 400;
 }
 
 .hobbies-container {
@@ -253,7 +246,7 @@ h1 > span {
 
 .experience-content,
 .education-content,
-.skills-wrapper  {
+.skills-wrapper {
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -286,21 +279,31 @@ h1 > span {
 section ul {
   padding: 15px;
   list-style-position: outside;
-  list-style-image: linear-gradient(to left bottom, rgb(3 56 244), rgb(224 37 206 / 79%) 83%);
+  list-style-image: linear-gradient(
+    to left bottom,
+    rgb(3 56 244),
+    rgb(224 37 206 / 79%) 83%
+  );
 }
 
 section li {
   margin-top: 10px;
- }
-
-section h3 {
-font-weight: 400;
 }
 
-section h3 span{
+.menu-social ul,
+.menu-social li {
+  list-style-type: none;
+}
+
+.menu-social > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+section h3 span {
   font-weight: 400;
   font-size: 18px;
-  }
+}
 
 section h4 {
   font-weight: 200;
@@ -313,11 +316,11 @@ section h4 {
   margin-top: 25px;
 }
 
-.education-content > span{
+.education-content > span {
   font-weight: 400;
   font-size: 18px;
   margin-top: 15px;
-  background-color:rgb(224 37 206 / 10%);
+  background-color: rgb(224 37 206 / 10%);
   border-radius: var(--border-radius);
   color: var(--secondary-text-color);
   padding: 8px;
