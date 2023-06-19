@@ -10,24 +10,23 @@
 
 html {
   font-size: 100%;
-} /*16px*/
+} /* 16px */
 
 :root {
-  --primary-text-color: #ffffff;
+  --primary-text-color: #fff;
   --secondary-text-color: #2d334a;
   --durability-text-color: #6a737d9c;
   --icon-color: #e3f6f5;
   --border-color: #272343;
   --main-background-color: linear-gradient(
     180deg,
-    rgba(3, 56, 244, 0.71) 33%,
-    rgba(224, 37, 206, 0.79) 83%
+    rgb(3 56 244 / 71%) 33%,
+    rgb(224 37 206 / 79%) 83%
   );
-  --second-background-color: rgba(196, 196, 196, 0.3);
-  --second-background-color-35: rgba(196, 196, 196, 0.35);
+  --second-background-color: rgb(196 196 196 / 30%);
+  --second-background-color-35: rgb(196 196 196 / 35%);
   --third-background-color: #fffffe;
   --text-background-color: #545454;
-
   --letter-spacing: 1px;
   --border-radius: 0.5rem;
 }
@@ -46,6 +45,7 @@ p {
   text-indent: 1.5em;
   text-align: justify;
 }
+
 h1,
 h2,
 h3,
@@ -94,9 +94,11 @@ a {
   display: block;
   object-fit: cover;
 }
+
 main {
   width: 100%;
 }
+
 .resume {
   margin: 10px;
   max-width: 1700px;
@@ -115,6 +117,7 @@ main {
   color: var(--primary-text-color);
   width: 100%;
 }
+
 .profile {
   display: flex;
   flex-direction: row;
@@ -139,11 +142,13 @@ main {
   flex-direction: column;
   margin-left: 15px;
 }
+
 h1 > span {
   font-weight: 200;
   font-size: clamp(1.5rem, 3vw, 3rem);
   color: var(--secondary-text-color);
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -176,16 +181,18 @@ h1 > span {
   text-align: left;
   padding: 10px 0 25px;
 }
+
 .social-container {
   display: flex;
   flex-direction: column;
 }
-.menu__social ul,
-.menu__social li {
+
+.menu-social ul,
+.menu-social li {
   list-style-type: none;
 }
 
-.menu__social > ul {
+.menu-social > ul {
   display: flex;
   flex-direction: row;
 }
@@ -221,6 +228,7 @@ h1 > span {
   border-radius: var(--border-radius);
   padding: 15px;
 }
+
 .hobby-items {
   display: flex;
   flex-direction: row;
@@ -228,9 +236,11 @@ h1 > span {
   align-items: center;
   padding: 25px 15px;
 }
+
 .hobby img {
   padding-bottom: 10px;
 }
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -240,6 +250,7 @@ h1 > span {
   padding: 10px auto;
   width: 100%;
 }
+
 .experience-content,
 .education-content,
 .skills-wrapper  {
@@ -247,6 +258,7 @@ h1 > span {
   flex-direction: column;
   padding: 25px;
 }
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -274,8 +286,9 @@ h1 > span {
 section ul {
   padding: 15px;
   list-style-position: outside;
-  list-style-image: linear-gradient(to left bottom, rgb(3, 56, 244), rgba(224, 37, 206, 0.79) 83%);
+  list-style-image: linear-gradient(to left bottom, rgb(3 56 244), rgb(224 37 206 / 79%) 83%);
 }
+
 section li {
   margin-top: 10px;
  }
@@ -304,13 +317,13 @@ section h4 {
   font-weight: 400;
   font-size: 18px;
   margin-top: 15px;
-  background-color:rgba(224, 37, 206, 0.1);
+  background-color:rgb(224 37 206 / 10%);
   border-radius: var(--border-radius);
   color: var(--secondary-text-color);
   padding: 8px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (width <= 760px) {
   .resume {
     display: flex;
     flex-direction: column;
@@ -324,11 +337,12 @@ section h4 {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (width <= 576px) {
   .resume {
     display: flex;
     flex-direction: column;
   }
+
   .about-me-container,
   .main-container {
     margin: auto;
